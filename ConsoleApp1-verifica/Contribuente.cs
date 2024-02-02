@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1_verifica
 {
-    internal class Contribuente
+    // dichiarazione di classe
+    internal class Contribuente 
     {
         private string _nome;
         private string _cognome;
@@ -17,8 +18,8 @@ namespace ConsoleApp1_verifica
         private decimal _redditoAnnuale;
         private decimal _imposta;
 
-
-        public string Nome
+        // get e set
+        public string Nome 
         {
             get { return _nome; }
             set { _nome = value; }
@@ -60,7 +61,7 @@ namespace ConsoleApp1_verifica
             set { _redditoAnnuale = value; }
         }
 
-        
+        // Costruttore della classe
 
         public Contribuente(string nome, string cognome, DateTime dataNascita, string codiceFiscale, char sesso, string comuneResidenza, decimal redditoAnnuale)
         {
@@ -72,6 +73,8 @@ namespace ConsoleApp1_verifica
             ComuneResidenza = comuneResidenza;
             RedditoAnnuale = redditoAnnuale;
         }
+
+        // Metodo per calcolare l'imposta in base al reddito annuale
         public decimal CalcolaImposta()
         {
             
@@ -104,6 +107,7 @@ namespace ConsoleApp1_verifica
             
         }
 
+        // Metodo per ottenere e stampare i dettagli in console
         public void GetDettagli()
         {
             Console.WriteLine("\n---------------------------------------------" + "\n" + "\n");
