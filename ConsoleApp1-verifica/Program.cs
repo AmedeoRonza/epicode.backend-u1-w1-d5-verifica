@@ -35,6 +35,12 @@ namespace ConsoleApp1_verifica
 
             Console.Write("Inserisci il codice fiscale del contribuente: ");
             string codiceFiscale = Console.ReadLine();
+            while (codiceFiscale.Length != 16) // controllo sulla lunghezza del codice fiscale
+            {
+                Console.WriteLine("Il codice fiscale deve essere composto da 16 caratteri. Riprova.");
+                Console.Write("Inserisci il codice fiscale del contribuente (16 caratteri): ");
+                codiceFiscale = Console.ReadLine();
+            }
 
             Console.Write("Inserisci il sesso del contribuente (M/F): ");
             char sesso;
