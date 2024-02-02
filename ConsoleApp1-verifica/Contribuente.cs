@@ -16,7 +16,7 @@ namespace ConsoleApp1_verifica
         private char _sesso;
         private string _comuneResidenza;
         private decimal _redditoAnnuale;
-        private decimal _imposta;
+        
 
         // get e set
         public string Nome 
